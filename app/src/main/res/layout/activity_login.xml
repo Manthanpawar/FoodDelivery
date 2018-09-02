@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context="foodxpress.foodxpress.Login">
+
+    <include layout="@layout/app_tool_bar" android:id="@+id/app_login_bar"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_login_bar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Login to Your Account"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtloginemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginEnd="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtloginemail"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtloginpassword">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:hint="Password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="forgotpassword"
+            android:layout_gravity="right"
+            android:text="FORGOT PASSWORD?"
+            android:textColor="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtloginpassword"
+        android:layout_below="@+id/txtloginpassword"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedbutton"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="15dp"
+        android:text="Sign In"
+        android:textColor="#FFF"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_toStartOf="@+id/btnlogin"
+        android:singleLine="true"
+        android:text="DO NOT HAVE AN ACCOUNT?"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:onClick="signup"
+        android:text="SIGNUP"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtloginpassword"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/choiceuser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R u User?"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/choicerest"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R u Restaurant?"/>
+    </RadioGroup>
+
+
+</RelativeLayout>

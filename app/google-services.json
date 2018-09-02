@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1002509018649",
+    "firebase_url": "https://foodxpress2-22cac.firebaseio.com",
+    "project_id": "foodxpress2-22cac",
+    "storage_bucket": "foodxpress2-22cac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002509018649:android:6b8b7e80824c8c87",
+        "android_client_info": {
+          "package_name": "foodxpress.foodxpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002509018649-l1lsobgm9qh3famenk1k2ig71jas95dj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "foodxpress.foodxpress",
+            "certificate_hash": "5b8ae273e17faff0b2335b87e1aca2af2bac0a77"
+          }
+        },
+        {
+          "client_id": "1002509018649-okf76v0bc74de9fdnhnev2f5fn29og92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcruY5SaWm3YMFNmIkaoNP7NLQ_N_KdJ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002509018649-okf76v0bc74de9fdnhnev2f5fn29og92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

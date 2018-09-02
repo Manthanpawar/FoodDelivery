@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="foodxpress.foodxpress.admin_panel">
+<include layout="@layout/app_tool_bar" android:id="@+id/app_baar_admin"/>
+
+    <Button
+        android:id="@+id/btndisplayusers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_baar_admin"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Users"
+        android:textColor="#FFF"
+        android:onClick="viewusers"/>
+
+    <Button
+        android:id="@+id/btnshowbranches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btndisplayusers"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:text="Branch"
+        android:textColor="#FFF"
+        android:onClick="viewBranch"/>
+</RelativeLayout>

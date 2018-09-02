@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/l1"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="foodxpress.foodxpress.hotelregistration">
+
+<include layout="@layout/app_tool_bar" android:id="@+id/app_baar_restaurant"/>
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Create Account Restaurant"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="200dp"
+        android:paddingLeft="45dp"
+        android:text="* all field required!"
+        android:textColor="#F00" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtrestowneremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Owner Email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestpassword"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Create a New Password"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestrptpassword"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Repeate Password"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestname"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Restaurant Name"
+                    android:textColor="#000"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestregistername"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:singleLine="true"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Register Name of Business"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestoutletaddress"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:backgroundTint="@color/colorAccent"
+                    android:minLines="2"
+                    android:maxLines="2"
+                    android:hint="Restaurant/Outlet Address(With Pincode)"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestbusinessaddress"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:minLines="2"
+                    android:maxLines="2"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Registered Business Address"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestOwnername"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:singleLine="true"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Owner Name"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestownercontactno"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Contact Number"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:text="+91"
+                    android:inputType="number"
+                    android:textColor="#000" />
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtrestcity"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:singleLine="true"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="City"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtreststate"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorAccent">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:singleLine="true"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="State"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnrestregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginEnd="20dp"
+
+                android:layout_marginStart="250dp"
+                android:background="@drawable/roundedbutton"
+                android:paddingBottom="10dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:text="Register"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

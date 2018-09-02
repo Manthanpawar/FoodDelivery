@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="foodxpress.foodxpress">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".Welcome" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login" />
+        <activity android:name=".Welcome" />
+        <activity
+            android:name=".welcome_page"
+            android:label="Food Xpress"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin_panel"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".forgotpassword"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".restaurantpartner"
+            android:parentActivityName=".welcome_page" />
+        <activity
+            android:name=".hotelregistration"
+            android:parentActivityName=".restaurantpartner" />
+        <activity android:name=".welcome_restaurant" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".AddFood"
+            android:parentActivityName=".welcome_restaurant" />
+        <activity
+            android:name=".Food_order"
+            android:parentActivityName=".welcome_page" />
+        <activity android:name=".view_order" android:parentActivityName=".welcome_restaurant"/>
+        <activity
+            android:name=".restViewFood"
+            android:parentActivityName=".welcome_restaurant" />
+        <activity
+            android:name=".EditFood"
+            android:parentActivityName=".restViewFood" />
+        <activity android:name=".foodxpress_about" android:parentActivityName=".welcome_page"></activity>
+    </application>
+
+</manifest>

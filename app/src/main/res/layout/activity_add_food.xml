@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".AddFood">
+
+    <include
+        android:id="@+id/app_baar_food"
+        layout="@layout/app_tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtfoodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Item Name"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtfooddesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Item Desc"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtfoodprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtfoodquantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/imgfood"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp" />
+            <Button
+                android:id="@+id/btnadditem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roundedbutton"
+                android:text="Add Item"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

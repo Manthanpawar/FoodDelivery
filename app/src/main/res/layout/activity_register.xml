@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/l3"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="foodxpress.foodxpress.Register">
+    <include layout="@layout/app_tool_bar" android:id="@+id/app_baar_register"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Create New Account"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtregister"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtfname"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtcontactno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtlname"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Contact No"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:singleLine="true"
+
+                    android:text="+91"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtcontactno"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtemail"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtrepeatepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtpassword"
+                android:layout_marginEnd="20dp"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorAccent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Repeate Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txtrepeatepassword"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundedbutton"
+
+                android:paddingBottom="15dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:text="Register"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

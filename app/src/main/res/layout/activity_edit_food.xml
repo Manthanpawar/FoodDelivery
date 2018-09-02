@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFood">
+<include layout="@layout/app_tool_bar" android:id="@+id/edit_food_app_tool_baar"/>
+
+    <ImageView
+        android:id="@+id/imgviewitem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_food_app_tool_baar"
+        app:srcCompat="@drawable/avtar" />
+
+    <TextView
+        android:id="@+id/txtviewitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtviewitemdescrtiption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtviewitemname"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edtviewprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtviewitemname"
+        android:layout_below="@+id/txtviewitemdescrtiption"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:textColor="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/edtviewquantity"
+        android:layout_marginStart="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:textColor="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnupdateitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Update"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>

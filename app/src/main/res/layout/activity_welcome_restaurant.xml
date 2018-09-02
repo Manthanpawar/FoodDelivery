@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/l4"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="foodxpress.foodxpress.welcome_restaurant">
+<include layout="@layout/app_tool_bar" android:id="@+id/app_baar_welcome_restaurant"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="505dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/displayrestname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/displayrestemail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btnaddfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedbutton"
+                android:textColor="#FFF"
+                android:text="Add Food"
+                android:onClick="addfood"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedbutton"
+                android:textColor="#FFF"
+                android:id="@+id/btnviewitem"
+                android:text="View Menu"
+                android:onClick="viewmenu"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedbutton"
+                android:textColor="#FFF"
+                android:id="@+id/btnvieworder"
+                android:text="View Order"
+                android:onClick="ViewOrders"/>
+
+            <Button
+                android:id="@+id/restlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedbutton"
+                android:text="Logout"
+                android:textColor="#FFF"
+                android:onClick="restlogout"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

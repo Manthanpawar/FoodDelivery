@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="foodxpress.foodxpress.Welcome">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="300dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="Welcome To Food Xpress"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnalreadylogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorAccent"
+        android:paddingEnd="35dp"
+        android:paddingStart="35dp"
+
+        android:text="already have account"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnhomeregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnalreadylogin"
+        android:layout_below="@+id/btnalreadylogin"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingEnd="39dp"
+        android:paddingStart="41dp"
+        android:text="Need a new account?"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnalreadylogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+</RelativeLayout>

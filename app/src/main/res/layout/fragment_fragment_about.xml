@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="foodxpress.foodxpress.fragment_about">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textpartner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="Partner with us"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/textabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="About"
+        android:textColor="#000"
+        android:textSize="16dp" />
+</FrameLayout>

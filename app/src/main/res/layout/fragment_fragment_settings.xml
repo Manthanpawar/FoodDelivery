@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="foodxpress.foodxpress.fragment_settings">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/rsetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Edit Information"
+            android:textColor="#000"
+            android:textSize="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edtfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="68dp"
+            android:textColorHint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="First Name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edtlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="185dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edtcontactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Contact No"
+            android:textColorHint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                android:maxLength="13"
+                android:singleLine="true"
+                android:text="+91"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnuserupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtfname"
+            android:layout_below="@+id/edtcontactno"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedbutton"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="Update"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+</FrameLayout>

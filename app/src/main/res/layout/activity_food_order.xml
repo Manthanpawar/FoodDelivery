@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/food_order"
+
+
+    tools:context=".Food_order">
+    <include layout="@layout/app_tool_bar" android:id="@+id/app_baar_foodorder"/>
+
+    <ImageView
+        android:id="@+id/orderimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/avtar" />
+
+    <TextView
+        android:id="@+id/txtitemname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="5dp"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtitemdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingStart="5dp"
+
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtitemprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingStart="5dp"
+
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/edtquantity"
+        android:textColorHint="@color/colorAccent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Enter Quantity here"
+            android:inputType="number"
+            android:textColor="#000" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edtorderaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="2dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:singleLine="true"
+            android:hint="Address" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txttotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingStart="5dp"
+        android:text=""
+
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/btntempOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="20dp"
+        android:textColor="#FFF"
+        android:background="@drawable/roundedbutton"
+        android:text="Order" />
+
+
+</LinearLayout>

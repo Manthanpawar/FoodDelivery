@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/l2"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="foodxpress.foodxpress.restaurantpartner">
+<include layout="@layout/app_tool_bar" android:id="@+id/app_baar_partnerwithus"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="505dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:paddingStart="50dp"
+                android:text="Get listed on india's leading online\n marketplace for food delivery"
+
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:src="@drawable/restaurant" />
+
+
+            <Button
+                android:id="@+id/btnregisterrestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/roundedbutton"
+                android:text="Start Online Registration"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="16dp"
+                android:text="* foodxpress reserves the right to accept or reject the application at its sole discretion"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"
+                android:text="** Registration fees of INR 12,000(Inclusive GST) to be paid Only on acceptance of your application"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
